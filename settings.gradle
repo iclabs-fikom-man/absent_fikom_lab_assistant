@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "assistant_absent_lab_fikom"
