@@ -10,18 +10,63 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ViewSwitcher
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="20dp"
         android:orientation="vertical">
 
-    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Absen"
+            android:textColor="@color/blues"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="ID Asisten"
+            android:inputType="number"
+            android:textColorHint="@color/white"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_baseline"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/editform"
+            android:padding="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/btnAbsen"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Hadir"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button"/>
+
+            <Button
+                android:id="@+id/btnIzin"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button"
+                android:text="Izin"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
